@@ -54,9 +54,17 @@ class tenantController extends basicController
                         ->create();
                     if($created){
                         header('location:index.php?action=listingTenant');
+
                     }
                 }else{
-                    echo ' les champs sont obligatoir';
+                    ?>
+                    <div class = "container ">
+                        <div class="alert alert-danger" role="alert">
+                            please complete the attached form!
+                        </div>
+                        <div>
+                    <?php
+                    static::view('createTenant');
                 }
             }
         }

@@ -4,6 +4,7 @@ $titre= "Create Car";
 
 ob_start();
 ?>
+    <div class = "container ">
     <form action="index.php?action=storeActionCar" method="post">
         <div>
             <label>Matricule</label>
@@ -29,6 +30,6 @@ ob_start();
         </div>
 
     </form>
-
+    </div>
 <?php $contenu= ob_get_clean()?>
 <?php include "layout.php";

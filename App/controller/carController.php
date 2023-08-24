@@ -55,7 +55,14 @@ class carController extends basicController
                         header('location:index.php?action=listingCar');
                     }
                 }else{
-                    echo ' les champs sont obligatoir';
+                    ?>
+                    <div class = "container ">
+                    <div class="alert alert-danger" role="alert">
+                        please complete the attached form!
+                    </div>
+                    <div>
+                    <?php
+                    static::view('createCar');
                 }
             }
         }

@@ -16,7 +16,7 @@ ob_start();
                 <?php
                 /** @var \App\modele\car[] $data */
                 foreach ($data as $car){
-                    echo "<option value='".$car['id'] ."'>".$car['marque']."</option>";
+                    echo "<option value='".$car['id'] ."'>".$car['matricule']."</option>";
                 }
                 ?>
             </select>
@@ -27,7 +27,7 @@ ob_start();
                 <?php
                 /** @var \App\modele\tenant[] $tenants*/
                 foreach ($tenants as $tenant){
-                    echo "<option value='".$tenant['id']."'>".$tenant['lastname']."</option>";
+                    echo "<option value='".$tenant['id']."'>".$tenant['cin']."</option>";
                 }
                 ?>
             </select>

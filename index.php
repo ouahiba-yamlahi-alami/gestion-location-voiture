@@ -28,9 +28,9 @@ if(isset($_GET['action'])){
             tenantController::storeActionTenant();
             break;
         case 'test':
-            CarTenantController::getCarTenantAction();
-        case 'test':
             CarTenantController::createCarTenantAction();
+            CarTenantController::getCarTenantAction();
+            break;
             }
                }if(empty($_GET['action'])){
                         carController::indexAction();

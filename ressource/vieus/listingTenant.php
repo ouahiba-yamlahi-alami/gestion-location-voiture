@@ -1,6 +1,5 @@
 <?php
 $titre= "Listing Tenant";
-
 ob_start();
 ?>
     <a href="index.php?action=createTenant" class="btn btn-primary">Insert Tenant</a>
@@ -17,8 +16,6 @@ ob_start();
         </thead>
         <tbody>
         <?php
-
-
         /** @var \App\modele\tenant[] $data */
             foreach ($data as $tenant): ?>
                 <tr>
@@ -33,11 +30,6 @@ ob_start();
             <?php endforeach;
          ?>
         </tbody>
-
-    </table>
-
+        </table>
 <?php $contenu= ob_get_clean()?>
-
-
-
 <?php include "layout.php"; ?>

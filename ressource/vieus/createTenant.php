@@ -3,6 +3,7 @@ $titre= "Create Tenant";
 
 ob_start();
 ?>
+    <div class = "container m-2">
     <form action="index.php?action=storeActionTenant" method="post">
         <div>
             <label>Cin</label>
@@ -29,11 +30,8 @@ ob_start();
 
             <input type="submit" class="btn btn-success my-2" value="createTenant" name="createTenant" >
         </div>
-
-
-
     </form>
-
+    </div>
 
 <?php $contenu= ob_get_clean()?>
 <?php include "layout.php";
